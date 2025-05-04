@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GT01_RoundWorld 3
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 4800000, guid: b73df09019ebe48429ba19e42f11cbe5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -30,15 +30,14 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _AOMap:
-        m_Texture: {fileID: 2800000, guid: 87371d6475acff34aaf1fd4596845388, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 10}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -62,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 94ddededa5cbf2242b63ddd549cfba38, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightMap:
@@ -78,7 +77,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 4afc1765a23e31b4d91c3c7223087506, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 10, y: 50}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -90,7 +89,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RoughnessMap:
-        m_Texture: {fileID: 2800000, guid: 2f11c4bf57fe64b4f859276390ae902d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 10}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessMap:

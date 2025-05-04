@@ -47,6 +47,12 @@ public class PropsSetup : MonoBehaviour
             GameObject wall = Instantiate(Resources.Load(wallPrefabPath) as GameObject);
             wall.transform.SetParent(wallLeftContainer.transform);
             wall.transform.localPosition = new Vector3(0, 0, minZWall + (i * spaceWall));
+            wall.transform.localEulerAngles = new Vector3(90, 90, 0);
+            if (wallMesh.Length == 0)
+            {
+                Debug.LogError("Wall Mesh is empty!");
+                continue;
+            }
             MeshFilter meshFilter = wall.GetComponent<MeshFilter>();
             meshFilter.mesh = wallMesh[Random.Range(0, wallMesh.Length)];
         }
@@ -54,8 +60,15 @@ public class PropsSetup : MonoBehaviour
         {
             GameObject wall = Instantiate(Resources.Load(wallPrefabPath) as GameObject);
             wall.transform.SetParent(wallRightContainer.transform);
-            wall.transform.localPosition = new Vector3(0, 0, minZWall + (i * spaceWall));   
-            wall.transform.localEulerAngles = new Vector3(0, 270, 0);
+            wall.transform.localPosition = new Vector3(0, 0, minZWall + (i * spaceWall));
+            wall.transform.localEulerAngles = new Vector3(90, -90, 0);
+            wall.transform.localScale = new Vector3(-1 * wall.transform.localScale.x, wall.transform.localScale.y, wall.transform.localScale.z);
+
+            if (wallMesh.Length == 0)
+            {
+                Debug.LogError("Wall Mesh is empty!");
+                continue;
+            }
             MeshFilter meshFilter = wall.GetComponent<MeshFilter>();
             meshFilter.mesh = wallMesh[Random.Range(0, wallMesh.Length)];
         }
